@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DoodleApp</string>
+    <string name="new_page">New</string>
+    <string name="erase">Erase</string>
+    <string name="save">Save</string>
+    <string name="paint">Paint</string>
+    <string name="brush">Brush</string>
+</resources>

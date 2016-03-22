@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tony_macbook.doodleapp.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/main_container">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:weightSum="1"
+            android:id="@+id/nav_button_bar"
+            android:layout_gravity="center"
+            android:clickable="true">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/new_page"
+                android:layout_weight="0.33"
+                android:src="@drawable/new_page"
+                android:scaleType="fitXY"
+                android:background="#00ffffff"
+                 />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/save_page"
+                android:layout_weight="0.33"
+                android:src="@drawable/save_image"
+                android:scaleType="fitXY"
+                android:background="#00ffffff" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/open_page"
+                android:layout_weight="0.33"
+                android:src="@drawable/open_image"
+                android:scaleType="fitXY"
+                android:background="#00ffffff" />
+
+        </LinearLayout>
+
+        <com.example.tony_macbook.doodleapp.DoodleView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/draw_pane"
+            android:layout_weight="1.04" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:id="@+id/color_bar_layout">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/red_col"
+                android:layout_weight="1"
+                android:background="#ff0000" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/yellow_col"
+                android:layout_weight="1"
+                android:background="#fff200" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/black_col"
+                android:layout_weight="1"
+                android:background="#000000" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/blue_col"
+                android:layout_weight="1"
+                android:background="#002fff" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/purple_col"
+                android:layout_weight="1"
+                android:background="#9101ff" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/green_col"
+                android:layout_weight="1"
+                android:background="#26e200" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/orange_col"
+                android:layout_weight="1"
+                android:background="#ff6200" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/white_col"
+                android:layout_weight="1"
+                android:background="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/seek_bar_layout">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/brush_size"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
